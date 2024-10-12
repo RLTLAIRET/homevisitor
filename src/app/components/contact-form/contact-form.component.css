@@ -1,0 +1,46 @@
+
+
+
+
+
+h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    /* margin-bottom: 20px; */
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.text-danger {
+    font-size: 20px;
+    color: aqua;
+}
+
+#btn-enviar {
+    background: #136399;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    margin: auto;
+}
+
+#btn-enviar:hover {
+    cursor: pointer;
+    color: darkblue;
+}

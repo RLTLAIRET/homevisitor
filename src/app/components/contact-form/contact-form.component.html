@@ -1,0 +1,41 @@
+<div class="container-mask">
+    <div >
+        <h1>Contacto</h1>
+    
+        <form class="form" autocomplete="off" [formGroup]="forma" (ngSubmit)="onSubmit()">
+            <div>
+                <div class="form-group row">
+                    <div class="col">
+                        <input class="form-control" type="text" placeholder="Ingrese su Nombre" formControlName="nombre" [class.is-invalid]="nombreValido">
+                        <small class="text-danger" *ngIf="nombreValido">Debe Ingresar un Nombre minimo 5 caracteres </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <input class="form-control" type="text" placeholder="Correo Electrónico" formControlName="correo" [class.is-invalid]="correoValido">
+                        <small class="text-danger" *ngIf="correoValido">Debe Ingresar un correo valido </small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <input class="form-control" type="number" placeholder="Teléfono" formControlName="telefono" [class.is-invalid]="telefonoValido">
+                        <small class="text-danger" *ngIf="telefonoValido">Debe ingresar un número de teléfono válido</small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <input class="form-control" type="text" placeholder="Asunto" formControlName="asunto">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <textarea class="form-control" type="text" placeholder="Escribanos su mensaje" formControlName="mensaje" [class.is-invalid]="mensajeValido"></textarea>
+                        <small class="text-danger" *ngIf="mensajeValido">Debe escribir un mensaje minimo de 10 caracteres </small>
+                    </div>
+                </div>
+                <button id="btn-enviar" class="btn btn-primary btn-block" type="submit">Enviar Correo</button>
+            </div>
+        </form>
+    </div>
+</div>
+<br><br><br><br>

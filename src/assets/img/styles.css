@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+
+.carousel {
+    background-color: #333;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 70%;
+    margin: auto;
+    height: 80vh;
+    display: block;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.redes-sociales a {
+   
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+}
