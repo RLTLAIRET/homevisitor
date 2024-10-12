@@ -7,11 +7,11 @@ export const environment = {
   // mailrlt       : "rltlairet@gmail.com"
 
   // Produccion
-  correoUrl     : "./appcv/server/enviarcorreo/",
+  correoUrl      : "./home/enviarcorreo/",
   master        : "Rodolfo",
   whatsapprlt   : "https://wa.me/+56959175650",
   mailrlt       : "rltlairet@gmail.com"
 
 
- 
+
 };

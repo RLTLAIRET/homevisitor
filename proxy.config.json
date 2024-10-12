@@ -1,5 +1,5 @@
 {
-    "/appcv/server/*": {
+    "/home/*": {
         "target": "http://localhost/",
         "secure": false,
         "logLevel": "debug",

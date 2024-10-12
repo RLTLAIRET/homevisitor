@@ -21,28 +21,28 @@ export class ContactFormComponent implements OnInit {
                private fb:FormBuilder,
                ) {
                this.crearFormulario()
-               this.CargarFormulario() 
-            
-              
+               this.resetFromulario()
+
+
               }
 
   ngOnInit(): void {
-   
+
   }
 
   onSubmit() {
      if (this.forma.invalid){
-      Swal.fire('Error', 'Debe completar los campos del formulario!', 'error') 
+      Swal.fire('Error', 'Debe completar los campos del formulario!', 'error')
      return
   }
-      
+
   const myheader = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
-    
+
   this.http.post(`${this.url}enviarcontacto.php`, this.forma.value, {responseType :"text"}).subscribe(resp=>{
       if (resp="El Mensaje ha sido Enviado"){
           Swal.fire('Gracias por Escribir', 'El Mensaje ha sido Enviado!', 'success')
       } else {
-         Swal.fire('Error', 'El Mensaje no fue entregado!', 'error') 
+         Swal.fire('Error', 'El Mensaje no fue entregado!', 'error')
       }
   });
    this.router.navigate(['/home']);
@@ -56,8 +56,8 @@ export class ContactFormComponent implements OnInit {
         asunto   :['', [Validators.required,Validators.minLength(5)]],
         mensaje  :['', [Validators.required,Validators.minLength(10)]]
       });
-  }  
-  CargarFormulario(){
+  }
+  resetFromulario() {
         this.forma.reset({
           nombre: "",
           correo: "",
